@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script>
+        //适配不同设备
+        var width = document.documentElement.clientWidth || document.body.clientWidth
+        var ratio = width / 375;
+        //放大 缩小 屏幕
+        var fontSize = 100 * ratio
+        document.getElementsByTagName('html')[0].style['font-size'] = fontSize + 'px'
+    </script>
   </head>
   <body>
     <noscript>
