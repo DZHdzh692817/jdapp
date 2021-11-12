@@ -4,5 +4,5 @@
 //4.后端重启后端服务
 // 容易出问题的就算下面的路径配置不对 比如'./' 可能改成 '/jingdong'文件名 我修改了dfd
 module.exports = {
-    publicPath: './' //'./jingdong'
+    publicPath: './jingdong' //'./'
 }
